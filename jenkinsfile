@@ -5,7 +5,6 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
-                move -y E:\workspace\ReactApp\reactjs\build C:\Program Files\Apache Software Foundation\Tomcat 10.0\webapps\
             }
         }
         stage('Test') {

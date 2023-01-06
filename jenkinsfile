@@ -13,6 +13,7 @@ pipeline {
                     currentBuild.DisplyName = 'HelloWorld'
                 }
             }
+        }
         stage('Test') {
             steps {
                 echo 'Testing..'

@@ -7,6 +7,12 @@ pipeline {
                 echo 'Building...'
             }
         }
+        stage('Rename a Build')
+            steps {
+                script { 
+                    currentBuild.DisplyName = 'HelloWorld'
+                }
+            }
         stage('Test') {
             steps {
                 echo 'Testing..'
